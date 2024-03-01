@@ -9,7 +9,7 @@ import java.util.Scanner;
  */
 public final class Microwave {
   /** Private constructor to prevent instantiation of this utility class. */
-  private Microwave() {}
+  private Microwave() { }
 
   /**
    * Calculates the total time based on the amount and base time.
@@ -36,8 +36,7 @@ public final class Microwave {
   }
 
   /**
-   * Calculate and displays the time it takes for the microwave to heat the food in such a way that
-   * the user can understand.
+   * Calculate and displays the time it takes for the microwave to heat the food
    *
    * @param time The amount of time it takes to heat up food.
    */
@@ -48,7 +47,8 @@ public final class Microwave {
     final int seconds = (int) (time * 60 - minutes * 60);
 
     // output to console
-    System.out.println("It will take " + minutes + " minute(s) and " + seconds + " seconds");
+    System.out.println("It will take " + minutes + " minute(s) and "
+    + seconds + " seconds");
   }
 
   /**
@@ -84,7 +84,8 @@ public final class Microwave {
         totalTime = amountToTime(userAmount, baseTime);
         // checks invalid input (amount)
         if (totalTime == 0) {
-          System.out.println("That is not a valid amount of food to put in the microwave!");
+          System.out.println("That is not a valid amount of "
+              + "food to put in the microwave!");
 
           // displays time in mins and sec to user
         } else {
@@ -99,7 +100,8 @@ public final class Microwave {
         totalTime = amountToTime(userAmount, baseTime);
         // checks invalid input (amount)
         if (totalTime == 0) {
-          System.out.println("That is not a valid amount of food to put in the microwave!");
+          System.out.println("That is not a valid amount of "
+              + "food to put in the microwave!");
 
           // displays time in mins and sec to user
         } else {
@@ -124,13 +126,15 @@ public final class Microwave {
         // invalid input (food)
       } else {
         totalTime = 0;
-        System.out.println("Please enter either sub, pizza, or soup. No other input is valid.");
+        System.out.println("Please enter either sub, pizza,"
+            + " or soup. No other input is valid.");
       }
 
       // user did not enter a number for the amount
     } catch (NumberFormatException error) {
       // displays error message
-      System.out.println("That is not a valid amount of food to put in the microwave!");
+      System.out.println("That is not a valid amount of food to"
+          + " put in the microwave!");
     }
 
     // closes scanner
