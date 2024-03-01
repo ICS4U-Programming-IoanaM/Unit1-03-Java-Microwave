@@ -36,7 +36,7 @@ public final class Microwave {
   }
 
   /**
-   * Calculate and displays the time it takes for the microwave to heat the food
+   * Calculate and display the time it takes for the microwave to heat the food.
    *
    * @param time The amount of time it takes to heat up food.
    */
@@ -116,7 +116,8 @@ public final class Microwave {
         totalTime = amountToTime(userAmount, baseTime);
         // checks invalid input (amount)
         if (totalTime == 0) {
-          System.out.println("That is not a valid amount of food to put in the microwave!");
+          System.out.println("That is not a valid amount of"
+              + " food to put in the microwave!");
 
           // displays time in mins and sec to user
         } else {
