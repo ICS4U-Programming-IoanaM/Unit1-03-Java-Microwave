@@ -1,7 +1,7 @@
 import java.util.Scanner;
+
 /**
- * This program calculates how long 
- * something should be in the microwave for.
+ * This program calculates how long something should be in the microwave for.
  *
  * @author Ioana Marinescu
  * @version 1.0
@@ -9,7 +9,7 @@ import java.util.Scanner;
  */
 public final class Microwave {
   /** Private constructor to prevent instantiation of this utility class. */
-  private Microwave() { }
+  private Microwave() {}
 
   /**
    * Calculates the total time based on the amount and base time.
@@ -19,7 +19,7 @@ public final class Microwave {
    * @return The total time calculated.
    */
   public static double amountToTime(final int amount, final double baseTime) {
-    // checks if only 1 food -> base time 
+    // checks if only 1 food -> base time
     if (amount == 1) {
       return baseTime;
 
@@ -36,8 +36,8 @@ public final class Microwave {
   }
 
   /**
-   * Calculate and displays the time it takes for the microwave
-   * to heat the food in such a way that the user can understand.
+   * Calculate and displays the time it takes for the microwave to heat the food in such a way that
+   * the user can understand.
    *
    * @param time The amount of time it takes to heat up food.
    */
@@ -86,7 +86,7 @@ public final class Microwave {
         if (totalTime == 0) {
           System.out.println("That is not a valid amount of food to put in the microwave!");
 
-        // displays time in mins and sec to user
+          // displays time in mins and sec to user
         } else {
           displayTime(totalTime);
         }
@@ -101,7 +101,7 @@ public final class Microwave {
         if (totalTime == 0) {
           System.out.println("That is not a valid amount of food to put in the microwave!");
 
-        // displays time in mins and sec to user
+          // displays time in mins and sec to user
         } else {
           displayTime(totalTime);
         }
@@ -116,7 +116,7 @@ public final class Microwave {
         if (totalTime == 0) {
           System.out.println("That is not a valid amount of food to put in the microwave!");
 
-        // displays time in mins and sec to user
+          // displays time in mins and sec to user
         } else {
           displayTime(totalTime);
         }
