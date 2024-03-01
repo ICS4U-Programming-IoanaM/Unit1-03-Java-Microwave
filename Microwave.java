@@ -9,7 +9,9 @@ import java.util.Scanner;
  */
 public final class Microwave {
   /** Private constructor to prevent instantiation of this utility class. */
-  private Microwave() { }
+  private Microwave() {
+    // testing something
+  }
 
   /**
    * Calculates the total time based on the amount and base time.
