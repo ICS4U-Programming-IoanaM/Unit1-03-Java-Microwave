@@ -21,17 +21,21 @@ public final class Microwave {
    * @return The total time calculated.
    */
   public static double amountToTime(final int amount, final double baseTime) {
+    // declaration of variables
+    final double fiftyPercent = 1.5;
+    final int three = 3;
+    final double hundredPercent = 2;
     // checks if only 1 food -> base time
     if (amount == 1) {
       return baseTime;
 
       // checks if 2 food -> 50% more time spent cooking
     } else if (amount == 2) {
-      return baseTime * 1.5;
+      return baseTime * fiftyPercent;
 
       // checks if 3 food -> 100% more time spent cooking
-    } else if (amount == 3) {
-      return baseTime * 2;
+    } else if (amount == three) {
+      return baseTime * hundredPercent;
     }
     // user did not enter valid amount of food
     return 0;
@@ -69,9 +73,11 @@ public final class Microwave {
     System.out.println("How many are you heating up? (1-3)");
     final String userAmountStr = scanner.nextLine();
 
-    // declaration of variables
+    // declaration of variables & magic Numbers
     final double baseTime;
     final double totalTime;
+    final double oneAndFortyFiveSeconds = 1.75;
+    final double fortyFiveSeconds = 0.75;
 
     try {
       // converts string to int and store in variable
@@ -97,7 +103,7 @@ public final class Microwave {
         // user chose pizza
       } else if (userFood.equals("pizza")) {
         // sets base time
-        baseTime = 0.75;
+        baseTime = fortyFiveSeconds;
         // calculates total time it for food to heat
         totalTime = amountToTime(userAmount, baseTime);
         // checks invalid input (amount)
@@ -113,7 +119,7 @@ public final class Microwave {
         // user chose soup
       } else if (userFood.equals("soup")) {
         // sets base time
-        baseTime = 1.75;
+        baseTime = oneAndFortyFiveSeconds;
         // calculates total time it for food to heat
         totalTime = amountToTime(userAmount, baseTime);
         // checks invalid input (amount)
