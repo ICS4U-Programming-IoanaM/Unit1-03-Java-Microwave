@@ -54,7 +54,7 @@ public final class Microwave {
 
     // output to console
     System.out.print("It will take " + minutes);
-    System.out.println(" minute(s) and " + seconds + " seconds");
+    System.out.println(" minute(s) and " + seconds + " seconds.");
   }
 
   /**
